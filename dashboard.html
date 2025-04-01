@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - FreelanceHub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FreelanceHub</div>
+        <button class="burger" aria-label="Menu">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="postuler.html">Postuler</a></li>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+        </ul>
+    </nav>
+
+    <section id="dashboard-section">
+        <h2>Tableau de bord</h2>
+        <table id="dashboard-content">
+            <thead>
+                <tr>
+                    <th>Titre de la Mission</th>
+                    <th>Entreprise</th>
+                    <th>Nombre de Candidats</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <!-- Changer l'ID ici -->
+            <tbody id="dashboard-body">
+                <!-- Les données seront insérées ici par JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <div id="candidats-container" class="hidden">
+        <h3 id="mission-titre"></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody id="candidats-list">
+                <!-- Les candidats seront insérés ici par JavaScript -->
+            </tbody>
+        </table>
+        <button onclick="fermerCandidats()">Fermer</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 FreelanceHub - Tous droits réservés</p>
+    </footer>
+
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

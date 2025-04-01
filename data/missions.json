@@ -1,0 +1,46 @@
+{
+  "missions": [
+    {
+      "id": 1,
+      "titre": "Développeur Web Full-Stack",
+      "description": "Développement d'un site e-commerce avec React et Node.js.",
+      "entreprise": "TechCorp",
+      "competences": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "remuneration": "3000€ - 4000€",
+      "statut": "ouverte",
+      "candidatures": []
+    },
+    {
+      "id": 2,
+      "titre": "Designer UX/UI",
+      "description": "Refonte de l'interface utilisateur d'une application mobile.",
+      "entreprise": "DesignPro",
+      "competences": [
+        "Figma",
+        "Adobe XD",
+        "UX Research"
+      ],
+      "remuneration": "2500€ - 3500€",
+      "statut": "ouverte",
+      "candidatures": []
+    },
+    {
+      "id": 3,
+      "titre": "Rédacteur SEO",
+      "description": "Rédaction d'articles optimisés pour le référencement.",
+      "entreprise": "MarketingPlus",
+      "competences": [
+        "SEO",
+        "WordPress",
+        "Copywriting"
+      ],
+      "remuneration": "1500€ - 2000€",
+      "statut": "fermée",
+      "candidatures": []
+    }
+  ]
+}
