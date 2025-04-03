@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("http://localhost:3000/missions")  // Assure-toi que l'URL est correcte
+    fetch("http://localhost:3000/missions")  
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p><strong>Entreprise :</strong> ${mission.entreprise}</p>
               <p><strong>Compétences :</strong> ${mission.competences.join(", ")}</p>
               <p><strong>Rémunération :</strong> ${mission.remuneration}</p>
-              <a href="postuler.html?missionId=${mission.id}" class="btn">Postuler</a>
+              <a class="btn-postuler" href="postuler.html?missionId=${mission.id}" class="btn">Postuler</a>
             `;
             missionsContainer.appendChild(missionCard);
           });

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Missions</title>
+      <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="search.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FleexiWork</div>
+        <button class="burger" aria-label="Menu">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="missions.html">Missions</a></li>
+            <li><a href="dashboard.html">Tableau de bord</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>📋 Liste des Missions</h1>
+        <input type="text" id="search" class="search-bar" placeholder="🔍 Rechercher une mission...">
+
+  <section class="missions">
+    <h2>Missions disponibles</h2>
+    <div class="missions-container" id="missions-container">
+    </div>
+  </section>         
+        
+    </div>
+    <script src="assets/js/allmissions.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>
