@@ -176,6 +176,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
+    overflow-x: auto; /* Permet un défilement horizontal sur petits écrans */
+    table-layout: fixed; /* Cela permet de garder les colonnes bien réparties */
 }
 
 th, td {
@@ -199,7 +201,88 @@ th {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Limite la largeur à 1200px pour les grands écrans */
 }
+
+/* Styles Responsives pour centrer le tableau */
+@media (max-width: 1024px) {
+    /* Quand l'écran est plus petit, on garde le tableau horizontal */
+    table {
+        width: 100%;
+        overflow-x: auto; /* Permet de défiler horizontalement si nécessaire */
+    }
+    th, td {
+        font-size: 14px;
+        padding: 10px;
+    }
+    td button {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+}
+
+/* Pour des écrans plus petits (tablettes et mobiles) */
+@media (max-width: 768px) {
+    #candidats-container {
+        width: 90%; /* Ajuste la largeur du container pour les petits écrans */
+    }
+    table {
+        width: 100%;
+        overflow-x: auto;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+    td button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Pour les petits écrans mobiles */
+@media (max-width: 480px) {
+    #candidats-container {
+        width: 100%; /* Largeur à 100% pour les petits écrans */
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto; /* Permet un défilement horizontal */
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #f9f9f9;
+        font-size: 14px;
+    }
+
+    td {
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    /* Ajouter des labels dans les cellules */
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    td button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
 
 /* ================= BOUTONS GLOBAUX ================= */
 button {

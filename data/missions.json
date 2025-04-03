@@ -12,14 +12,7 @@
       ],
       "remuneration": "3000€ - 4000€",
       "statut": "ouverte",
-      "candidatures": [
-        {
-          "id": "1743666055074",
-          "nom": "test",
-          "email": "test@gmail.com",
-          "message": "test"
-        }
-      ]
+      "candidatures": []
     },
     {
       "id": 2,
