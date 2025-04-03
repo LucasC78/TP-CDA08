@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const missionsContainer = document.getElementById("missions-container");
 
     try {
-        // Charger les missions depuis le fichier JSON
+
         const response = await fetch("data/missions.json");
         const data = await response.json();
-        const missions = data.missions; // Accéder aux missions dans le JSON
+        const missions = data.missions;
 
         function displayMissions(filteredMissions) {
             missionsContainer.innerHTML = "";

@@ -299,3 +299,72 @@ button {
 button:hover {
     background-color: var(--btn-hover-color);
 }
+
+
+/* ================= TITRE FORMULAIRE ================= */
+.titre_candidature {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* ================= FORMULAIRE CANDIDATURE ================= */
+
+.form_candidature {
+    display: flex;
+    flex-direction: column;
+}
+
+.label_candidature {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.input_candidature,
+.textarea_candidature {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.textarea_candidature {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+/* ================= BOUTON DE SOUMISSION ================= */
+
+.bouton_candidature {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.bouton_candidature:hover {
+    background-color: var(--primary-hover);
+}
+
+
+/* ================= LIEN RETOUR ================= */
+
+.lien_retour {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.lien_retour:hover {
+    text-decoration: underline;
+}

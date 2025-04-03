@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const dashboardBody = document.getElementById("dashboard-body");
 
-    // Charger les missions depuis l'API
     fetch("http://localhost:3000/missions")
         .then(response => {
             if (!response.ok) {
@@ -10,17 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            console.log("Données reçues :", data);  // Afficher les données dans la console
+            console.log("Données reçues :", data);  
 
-            // Vérification si les missions sont dans un tableau
             if (!Array.isArray(data)) {
                 console.error("Erreur : Les missions ne sont pas un tableau.");
                 return;
             }
 
-            dashboardBody.innerHTML = ""; // Vider le tableau avant d'insérer de nouvelles lignes
+            dashboardBody.innerHTML = ""; 
 
-            // Parcours des missions et ajout dans le tableau
             data.forEach(mission => {
                 const nombreCandidats = mission.candidatures.length;
                 const row = `
@@ -49,17 +46,17 @@ function afficherCandidats(missionId) {
     const missionTitre = document.getElementById("mission-titre");
     const candidatsList = document.getElementById("candidats-list");
 
-    console.log(`Mission ID: ${missionId}`);  // Vérification de l'ID passé
+    console.log(`Mission ID: ${missionId}`);  
 
     fetch("http://localhost:3000/missions")
         .then(response => response.json())
         .then(data => {
-            console.log("Données des missions:", data);  // Vérification des données
+            console.log("Données des missions:", data);  
 
-            const mission = data.find(m => m.id === missionId);  // On cherche la mission par ID
+            const mission = data.find(m => m.id === missionId);  
             if (mission) {
-                missionTitre.textContent = mission.titre;  // On met le titre de la mission
-                candidatsList.innerHTML = "";  // Vider la liste des candidats
+                missionTitre.textContent = mission.titre;  
+                candidatsList.innerHTML = "";  
 
                 if (mission.candidatures.length === 0) {
                     candidatsList.innerHTML = "<tr><td colspan='3'>Aucun candidat pour cette mission.</td></tr>";
@@ -75,7 +72,7 @@ function afficherCandidats(missionId) {
                                 </td>
                             </tr>
                         `;
-                        candidatsList.innerHTML += row;  // Ajouter le candidat à la liste
+                        candidatsList.innerHTML += row;  
                     });
                 }
 
@@ -90,7 +87,7 @@ function afficherCandidats(missionId) {
         });
 }
 function fermerCandidats() {
-    // Cache le conteneur des candidats
+   
     const candidatsContainer = document.getElementById("candidats-container");
     candidatsContainer.classList.add("hidden");
 }
@@ -103,7 +100,7 @@ function supprimerCandidature(missionId, index) {
         if (!response.ok) {
             throw new Error("Erreur lors de la suppression de la candidature");
         }
-        // Si la suppression est réussie, on supprime la ligne du candidat dans l'interface
+    
         const candidatRow = document.getElementById(`candidat-${index}`);
         if (candidatRow) {
             candidatRow.remove();

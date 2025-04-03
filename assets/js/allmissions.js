@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (Array.isArray(data)) {
           const missionsContainer = document.getElementById("missions-container");
   
-          // Parcours des missions et création des cartes
           data.forEach(mission => {
             const missionCard = document.createElement("div");
             missionCard.classList.add("mission-card");
