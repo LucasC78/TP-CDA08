@@ -48,6 +48,48 @@
       "remuneration": "1500€ - 2000€",
       "statut": "fermée",
       "candidatures": []
+    },
+    {
+      "id": 4,
+      "titre": "Rédacteur SEA",
+      "description": "Rédaction d'articles optimisés pour le référencement.",
+      "entreprise": "MarketingPlus",
+      "competences": [
+        "SEO",
+        "WordPress",
+        "Copywriting"
+      ],
+      "remuneration": "1500€ - 2000€",
+      "statut": "fermée",
+      "candidatures": []
+    },
+    {
+      "id": 5,
+      "titre": "Dévéloppeur Java",
+      "description": "Rédaction d'articles optimisés pour le référencement.",
+      "entreprise": "MarketingPlus",
+      "competences": [
+        "SEO",
+        "Java",
+        "Vscode"
+      ],
+      "remuneration": "2500€ - 4000€",
+      "statut": "fermée",
+      "candidatures": []
+    },
+    {
+      "id": 6,
+      "titre": "Développeur Rust",
+      "description": "Rédaction d'articles optimisés pour le référencement.",
+      "entreprise": "MarketingPlus",
+      "competences": [
+        "SEO",
+        "Rust",
+        "Copywriting"
+      ],
+      "remuneration": "3500€ - 4000€",
+      "statut": "fermée",
+      "candidatures": []
     }
   ]
 }
