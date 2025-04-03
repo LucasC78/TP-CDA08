@@ -301,44 +301,55 @@ button:hover {
 }
 
 
-/* ================= TITRE FORMULAIRE ================= */
-.titre_candidature {
+
+/* ================= FORMULAIRE CANDIDATURE ================= */
+/* 📦 Conteneur principal du formulaire de candidature */
+.container_candidature {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎯 Titre principal du formulaire */
+.titre_formulaire {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* ================= FORMULAIRE CANDIDATURE ================= */
-
-.form_candidature {
+/* 📝 Formulaire de candidature */
+.formulaire_candidature {
     display: flex;
     flex-direction: column;
 }
 
+/* 🏷️ Label pour chaque champ du formulaire */
 .label_candidature {
     margin-top: 10px;
     font-weight: bold;
 }
 
-.input_candidature,
-.textarea_candidature {
+/* 🔳 Champs de saisie pour texte */
+.input_candidature, .textarea_candidature {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid var(--border-color);
+
     border-radius: 4px;
     font-size: 16px;
 }
 
+/* 📩 Zone de texte (textarea) */
 .textarea_candidature {
     resize: vertical;
-    min-height: 80px;
+    min-height: 100px;
 }
 
-
-/* ================= BOUTON DE SOUMISSION ================= */
-
-.bouton_candidature {
+/* ✅ Bouton de soumission de la candidature */
+.bouton_submit {
     padding: 12px;
     background-color: var(--primary-color);
     color: white;
@@ -346,21 +357,19 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
-.bouton_candidature:hover {
+.bouton_submit:hover {
     background-color: var(--primary-hover);
 }
 
-
-/* ================= LIEN RETOUR ================= */
-
+/* 🔙 Lien pour revenir à la liste des missions */
 .lien_retour {
     display: block;
     margin-top: 20px;
     text-align: center;
-    font-size: 16px;
+    font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
 }

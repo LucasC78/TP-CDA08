@@ -12,7 +12,14 @@
       ],
       "remuneration": "3000€ - 4000€",
       "statut": "ouverte",
-      "candidatures": []
+      "candidatures": [
+        {
+          "id": "1743711611341",
+          "nom": "test",
+          "email": "lucascoutantpro@gmail.com",
+          "message": "nzecb"
+        }
+      ]
     },
     {
       "id": 2,
@@ -82,7 +89,14 @@
       ],
       "remuneration": "3500€ - 4000€",
       "statut": "fermée",
-      "candidatures": []
+      "candidatures": [
+        {
+          "id": "1743711623987",
+          "nom": "test",
+          "email": "lucas.coutant@stu.one-business.school",
+          "message": "édéd"
+        }
+      ]
     }
   ]
 }
